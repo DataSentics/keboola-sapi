@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kbcstorage"
+version = "0.0.1"
+description = "Keboola Storage API"
+readme = "README.md"
+
+license = "MIT"
+
+authors = [
+    "Lukas Langr <lukas.langr@datasentics.com>",
+]
+
+packages = [
+    { include = "kbcstorage", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.26.69"
+requests = "^2.28.2"
+azure-storage-blob = "^12.14.1"
